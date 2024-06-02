@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superstore Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/chart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Superstore Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main-content">
+            <article id="analytics-section">
+                <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
+            </article>
+
+            <article id="notifications-section">
+                <canvas id="barChart" style="width:100%;max-width:500px"></canvas>
+            </article>
+
+            <article id="tasks-section">
+                <canvas id="doughnutChart" style="width:100%;max-width:500px"></canvas>
+            </article>
+
+            <article id="calendar-section">
+                <h2>Calendar</h2>
+                <p>This section will display the calendar.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Additional Information</h2>
+            <p>This sidebar will display additional information or links.</p>
+        </aside>
+
+        <section id="user-interactions">
+            <h2>User Interactions</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="sales">Sales</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="finance">Finance</option>
+                    <option value="hr">Human Resources</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Superstore Dashboard By Team 13 - Balikpapan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
